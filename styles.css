@@ -1,0 +1,255 @@
+/*
+  Dandy Pizza & Sushi website styles
+  
+  This stylesheet combines the menu structure of the Dandy Pizza site with
+  the clean, modern aesthetics of the Dodo Pizza interface. The design uses
+  a neutral white background with a warm orange accent reminiscent of
+  Dodo's branding. Cards are arranged in a responsive grid, and the
+  navigation bar sticks to the top of the viewport for easy access.
+*/
+
+/* CSS variables for easy theming */
+:root {
+  --accent: #ff6900;           /* Dodo-inspired orange */
+  --text-dark: #333;
+  --text-light: #777;
+  --card-bg: #fff;
+  --border-color: #e0e0e0;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --transition-fast: 0.2s;
+  --max-width: 1280px;
+  --nav-height: 60px;
+}
+
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: var(--text-dark);
+  background-color: #fafafa;
+  line-height: 1.5;
+}
+
+/* Main navigation bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: var(--card-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.navbar nav {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-list li {
+  margin-right: 0.75rem;
+}
+
+.nav-list li a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+  border-bottom: 2px solid transparent;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.cart-total {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+/* Sections */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+  scroll-behavior: smooth;
+}
+
+.menu-section {
+  margin-top: 2.5rem;
+}
+
+.menu-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: var(--text-dark);
+}
+
+.menu-section p {
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+}
+
+/* Grid layout for items */
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* Card design */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.card p {
+  padding: 0 0.75rem;
+  flex: 1;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.price {
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+/* Buttons */
+.order-btn,
+.add-promo-btn {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.order-btn:hover,
+.add-promo-btn:hover {
+  background-color: #e75d00;
+}
+
+/* Promotion form */
+#promo-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.form-group textarea {
+  min-height: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar nav {
+    display: none; /* Hide nav on mobile (can be improved with hamburger later) */
+  }
+  .navbar .logo {
+    margin-right: auto;
+  }
+  .cart {
+    margin-left: auto;
+  }
+  #promo-form {
+    flex-direction: column;
+  }
+}
