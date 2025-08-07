@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dandy Пицца и Суши</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Main navigation bar -->
+  <header class="navbar">
+    <div class="logo">Dandy</div>
+    <nav>
+      <!-- Primary categories replicating the Dandy menu but styled like the Dodo interface -->
+      <ul class="nav-list">
+        <li><a href="#pizza">Пицца</a></li>
+        <li><a href="#sets">Сеты</a></li>
+        <li><a href="#rolls">Роллы</a></li>
+        <li><a href="#snacks">Закуски</a></li>
+        <li><a href="#salads">Салаты</a></li>
+        <li><a href="#soups">Супы</a></li>
+        <li><a href="#drinks">Напитки</a></li>
+        <li><a href="#sauces">Соусы</a></li>
+        <li><a href="#combo">Комбо</a></li>
+        <li><a href="#kids">Детям</a></li>
+        <li><a href="#promotions">Акции</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <span>Корзина</span>
+      <span class="cart-total">0&nbsp;руб.</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Pizza section -->
+    <section id="pizza" class="menu-section">
+      <h2>Пиццы</h2>
+      <div class="items-container">
+        <!-- Each card contains an image, name, description, price and order button -->
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Спайси Туна" />
+          <h3>Спайси Туна</h3>
+          <p>Тунец, красный лук, сыр моцарелла, фирменный соус неаполитанский, орегано.</p>
+          <div class="card-footer">
+            <span class="price">499&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Белуччи" />
+          <h3>Белуччи</h3>
+          <p>Пармская ветчина, сыр моцарелла, соус неаполитанский, сыр страччино, рукола, сыр пармезан, оливковое масло.</p>
+          <div class="card-footer">
+            <span class="price">699&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Бургер" />
+          <h3>Бургер</h3>
+          <p>Соус неаполитанский, соус бургер, сыр моцарелла, мраморная говядина, бекон, маринованные огурцы, красный лук, томаты.</p>
+          <div class="card-footer">
+            <span class="price">499&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Вегетариана" />
+          <h3>Вегетариана</h3>
+          <p>Цукини, шампиньоны, маслины, болгарский перец, томаты, красный лук, рукола, сыр моцарелла, фирменный соус.</p>
+          <div class="card-footer">
+            <span class="price">499&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Гавайская" />
+          <h3>Гавайская</h3>
+          <p>Ветчина, ананасы, болгарский перец, сыр моцарелла, фирменный соус.</p>
+          <div class="card-footer">
+            <span class="price">499&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Горячий Чили" />
+          <h3>Горячий Чили</h3>
+          <p>Соус неаполитанский, сыр моцарелла, куриное филе, пепперони, томаты, перец халапеньо, соус чили.</p>
+          <div class="card-footer">
+            <span class="price">499&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Грибная" />
+          <h3>Грибная</h3>
+          <p>Сливочный соус, сыр моцарелла, шампиньоны.</p>
+          <div class="card-footer">
+            <span class="price">499&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Карбонара" />
+          <h3>Карбонара</h3>
+          <p>Соус неаполитанский, сыр моцарелла, бекон, сыр пармезан, ветчина, яйцо.</p>
+          <div class="card-footer">
+            <span class="price">499&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Пепперони" />
+          <h3>Пепперони</h3>
+          <p>Пепперони, сыр моцарелла, фирменный соус, орегано.</p>
+          <div class="card-footer">
+            <span class="price">499&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Четыре сыра" />
+          <h3>Четыре сыра</h3>
+          <p>Сыр рокфор, фета, пармезан, моцарелла, соус неаполитанский.</p>
+          <div class="card-footer">
+            <span class="price">499&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sets section -->
+    <section id="sets" class="menu-section">
+      <h2>Сеты</h2>
+      <div class="items-container">
+        <div class="card">
+          <img src="images/sushi1.jpg" alt="Тёплый Цезарь" />
+          <h3>Тёплый Цезарь</h3>
+          <p>Набор: ролл Цезарь с лососем, ролл Цезарь с курицей, темпура Цезарь.</p>
+          <div class="card-footer">
+            <span class="price">1050&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/sushi1.jpg" alt="Темпура" />
+          <h3>Темпура</h3>
+          <p>Набор: Фура, Шиба, Фудзи.</p>
+          <div class="card-footer">
+            <span class="price">1550&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/sushi1.jpg" alt="Фудзияма" />
+          <h3>Фудзияма</h3>
+          <p>Калифорния с лососем, Онигара уни, Инь-янь запечённый, Сяке ролл, Унаги ролл.</p>
+          <div class="card-footer">
+            <span class="price">2450&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rolls section -->
+    <section id="rolls" class="menu-section">
+      <h2>Роллы</h2>
+      <div class="items-container">
+        <div class="card">
+          <img src="images/sushi1.jpg" alt="Чеддер" />
+          <h3>Чеддер</h3>
+          <p>Рис, нори, угорь, креветка, сыр чеддер, сливочный сыр, авокадо, масаго.</p>
+          <div class="card-footer">
+            <span class="price">550&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/sushi1.jpg" alt="Хикаро маки" />
+          <h3>Хикаро маки</h3>
+          <p>Рис, нори, креветка, лосось, тунец, спайси соус, стружка тунца.</p>
+          <div class="card-footer">
+            <span class="price">590&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/sushi1.jpg" alt="Филадельфия унаги" />
+          <h3>Филадельфия унаги</h3>
+          <p>Рис, нори, сливочный сыр, масаго, угорь, соус унаги, кунжут.</p>
+          <div class="card-footer">
+            <span class="price">450&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Snacks section -->
+    <section id="snacks" class="menu-section">
+      <h2>Закуски</h2>
+      <div class="items-container">
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Картофель фри" />
+          <h3>Картофель фри</h3>
+          <p>Хрустящий картофель, соль.</p>
+          <div class="card-footer">
+            <span class="price">150&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Наггетсы" />
+          <h3>Куриные наггетсы</h3>
+          <p>Золотистые куриные кусочки, соус на выбор.</p>
+          <div class="card-footer">
+            <span class="price">220&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Чесночные гренки" />
+          <h3>Чесночные гренки</h3>
+          <p>Поджаренный хлеб с чесночным ароматом, сырный соус.</p>
+          <div class="card-footer">
+            <span class="price">120&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salads section -->
+    <section id="salads" class="menu-section">
+      <h2>Салаты</h2>
+      <div class="items-container">
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Цезарь" />
+          <h3>Салат Цезарь</h3>
+          <p>Куриное филе, салат айсберг, сыр пармезан, соус цезарь, сухарики.</p>
+          <div class="card-footer">
+            <span class="price">350&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Греческий" />
+          <h3>Греческий салат</h3>
+          <p>Свежие овощи, сыр фета, маслины, оливковое масло.</p>
+          <div class="card-footer">
+            <span class="price">320&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soups section -->
+    <section id="soups" class="menu-section">
+      <h2>Супы</h2>
+      <div class="items-container">
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Куриный суп" />
+          <h3>Куриный суп</h3>
+          <p>Лёгкий бульон с курицей, овощами и зеленью.</p>
+          <div class="card-footer">
+            <span class="price">280&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Томатный суп" />
+          <h3>Томатный суп</h3>
+          <p>Насыщенный томатный суп с базиликом.</p>
+          <div class="card-footer">
+            <span class="price">250&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drinks section -->
+    <section id="drinks" class="menu-section">
+      <h2>Напитки</h2>
+      <div class="items-container">
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Кока-кола" />
+          <h3>Кока‑кола 0,5&nbsp;л</h3>
+          <p>Газированный напиток.</p>
+          <div class="card-footer">
+            <span class="price">100&nbsp;руб.</span>
+            <button class="order-btn">В корзину</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Сок апельсиновый" />
+          <h3>Сок апельсиновый 0,33&nbsp;л</h3>
+          <p>Свежевыжатый сок.</p>
+          <div class="card-footer">
+            <span class="price">120&nbsp;руб.</span>
+            <button class="order-btn">В корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sauces section -->
+    <section id="sauces" class="menu-section">
+      <h2>Соусы</h2>
+      <div class="items-container">
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Барбекю" />
+          <h3>Соус Барбекю</h3>
+          <p>Ароматный соус для мясных блюд и закусок.</p>
+          <div class="card-footer">
+            <span class="price">50&nbsp;руб.</span>
+            <button class="order-btn">В корзину</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Чесночный соус" />
+          <h3>Соус чесночный</h3>
+          <p>Нежный соус с ароматом чеснока.</p>
+          <div class="card-footer">
+            <span class="price">50&nbsp;руб.</span>
+            <button class="order-btn">В корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Combo section -->
+    <section id="combo" class="menu-section">
+      <h2>Комбо</h2>
+      <div class="items-container">
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Комбо 1" />
+          <h3>Пицца + Напиток</h3>
+          <p>Выберите любимую пиццу и напиток со скидкой.</p>
+          <div class="card-footer">
+            <span class="price">550&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Комбо 2" />
+          <h3>Пицца + Ролл</h3>
+          <p>Пицца на выбор и ролл из нашего меню.</p>
+          <div class="card-footer">
+            <span class="price">750&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kids section -->
+    <section id="kids" class="menu-section">
+      <h2>Для детей</h2>
+      <div class="items-container">
+        <div class="card">
+          <img src="images/pizza1.jpg" alt="Мини пицца" />
+          <h3>Мини‑пицца</h3>
+          <p>Маленькая пицца Маргарита для самых маленьких гостей.</p>
+          <div class="card-footer">
+            <span class="price">250&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="Детский ролл" />
+          <h3>Детский ролл</h3>
+          <p>Нежный ролл с курицей и сливочным сыром.</p>
+          <div class="card-footer">
+            <span class="price">200&nbsp;руб.</span>
+            <button class="order-btn">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotions section with form to add new promotions -->
+    <section id="promotions" class="menu-section">
+      <h2>Акции</h2>
+      <p>Добавьте новую акцию, чтобы привлечь покупателей:</p>
+      <form id="promo-form">
+        <div class="form-group">
+          <label for="promo-title">Название акции</label>
+          <input type="text" id="promo-title" placeholder="Например: 1+1=3" required />
+        </div>
+        <div class="form-group">
+          <label for="promo-desc">Описание</label>
+          <textarea id="promo-desc" placeholder="Краткое описание акции" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="promo-price">Цена / выгода</label>
+          <input type="text" id="promo-price" placeholder="Например: скидка 20%" required />
+        </div>
+        <button type="submit" class="add-promo-btn">Добавить акцию</button>
+      </form>
+      <div class="items-container" id="promo-container">
+        <!-- Promo cards will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
